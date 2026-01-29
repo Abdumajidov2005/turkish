@@ -13,21 +13,31 @@
 ul {
   list-style: none;
 }
-header{
-    margin: 0px auto;
-    background-image: url("../imgs/hero\ img.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 650px;
+header {
+  background-image: url("../imgs/hero\ img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+nav .container {
+  padding: 36px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .container .nav_content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 nav .container ul {
   display: flex;
   align-items: center;
   gap: 50px;
   text-align: right;
-  padding: 20px 50px;
-  padding-left: 370px;
   font-size: 14px;
   font-weight: 700;
 }
@@ -53,204 +63,264 @@ nav .container ul li:hover::after {
 nav .container ul li:hover {
   color: #f84646;
 }
-nav .container ul li button {
+nav .container button {
   padding: 10px 20px;
   background-color: #f84646;
   color: white;
   border: none;
   border-radius: 5px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
-nav .container ul li button:hover {
+nav .container button:hover {
   transform: scale(1.2);
 }
-nav .container ul li button:active {
+nav .container button:active {
   transform: scale(0.9);
 }
+
 .hero .container {
-  width: 665px;
-  height: 406px;
-  margin-top: 100px;
-  margin-left: 50px;
+  padding-top: 100px;
+  padding-bottom: 160px;
 }
-.hero .container h1{
-    font-size: 64px;
-    font-weight: 800;
-    margin-bottom: 20px;
+
+.hero_info {
+  width: 660px;
 }
-.hero .container p{
-    font-weight: 400;
-    font-size: 20px;
+
+.hero .container h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
-.hero .container form{
-    margin-bottom: 50px;
-    padding-top: 50px;
-    padding-bottom: 150px;
+.hero .container p {
+  font-weight: 400;
+  font-size: 20px;
 }
-.hero .container form input{
-    padding: 15px 20px;
-    width: 400px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    color: #f84646;
+.hero .container form {
+  margin-top: 50px;
+  width: 410px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
 }
-.hero .container form button{
-  padding: 15px 18px;
+.hero .container form input {
+  padding: 10px 20px;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #f84646;
+}
+.hero .container form button {
+  padding: 10px 10px;
   border: none;
   background-color: white;
   background-color: #f84646;
   border-radius: 5px;
   color: white;
-} 
-.s1 .container{
+}
+.s1 .container {
   margin: 0px auto;
   padding: 100px 130px;
 }
-.s1 .container .text{
+.s1 .container .text {
   text-align: center;
 }
-.s1 .container .text h2{
+.s1 .container .text h2 {
   font-weight: 900;
   padding-bottom: 30px;
 }
-.s1 .container .boxs .card{
+.s1 .container .boxs .card {
   margin-top: 100px;
   width: 275px;
   text-align: center;
   height: 200px;
   position: relative;
   z-index: 2;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.s1 .container .boxs{
+.s1 .container .boxs {
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
 }
-.s1 .container .boxs .card .circle{
+.s1 .container .boxs .card .circle {
   width: 40px;
   height: 40px;
-  background-color: #FF5391;
+  background-color: #ff5391;
   border-radius: 50%;
   position: absolute;
   right: 100px;
   z-index: -1;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.s1 .container .boxs .card:nth-of-type(2) .circle{
+.s1 .container .boxs .card:nth-of-type(2) .circle {
   position: absolute;
   right: 140px;
-  background-color: #7553FF;
+  background-color: #7553ff;
 }
-.s1 .container .boxs .card:nth-of-type(3) .circle{
+.s1 .container .boxs .card:nth-of-type(3) .circle {
   width: 40px;
   height: 40px;
-  background-color: #53C1FF;
+  background-color: #53c1ff;
   border-radius: 50%;
   position: absolute;
   right: 100px;
   z-index: -1;
 }
-.s1 .container .boxs .card:nth-of-type(4) .circle{
+.s1 .container .boxs .card:nth-of-type(4) .circle {
   width: 40px;
   height: 40px;
-  background-color: #53C1FF;
+  background-color: #53c1ff;
   border-radius: 50%;
   position: absolute;
   right: 132px;
   z-index: -1;
 }
-.s1 .container .boxs .card:nth-of-type(5) .circle{
+.s1 .container .boxs .card:nth-of-type(5) .circle {
   width: 40px;
   height: 40px;
-  background-color: #FF5353;
+  background-color: #ff5353;
   border-radius: 50%;
   position: absolute;
   right: 100px;
   z-index: -1;
 }
-.s1 .container .boxs .card:nth-of-type(6) .circle{
+.s1 .container .boxs .card:nth-of-type(6) .circle {
   width: 40px;
   height: 40px;
-  background-color: #FFBA53;
+  background-color: #ffba53;
   border-radius: 50%;
   position: absolute;
   right: 100px;
   bottom: 85%;
   z-index: -1;
 }
-.s1 .container .boxs .card:hover .circle{
+.s1 .container .boxs .card:hover .circle {
   background-color: #f84646;
 }
-.s2{
-  background-color: #F84646;
+.s2 {
+  background-color: #f84646;
 }
-.s2 .container{
+.s2 .container {
   padding: 20px 80px;
 }
-.s2 .container .text{
+.s2 .container .text {
   text-align: center;
   line-height: 40px;
   font-weight: 800;
   color: white;
 }
-.s2 .container .text p{
+.s2 .container .text p {
   font-weight: 400;
   padding-bottom: 30px;
 }
-.s2 .container .links{
+.s2 .container .links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 30px;
   color: white;
 }
-.s3 .container{
+.s3 .container {
   margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.s3 .container .card{
+.s3 .container .card {
   width: 530px;
   height: 430px;
   padding-right: 50px;
   padding-bottom: 100px;
 }
-.s3 .container .card h1{
+.s3 .container .card h1 {
   font-size: 50px;
   padding-bottom: 30px;
 }
-.s3 .container .card p{
+.s3 .container .card p {
   line-height: 30px;
   padding-bottom: 30px;
   color: #808080;
 }
-.s3 .container .card button{
+.s3 .container .card button {
   padding: 10px 50px;
   border-radius: 8px;
   border: none;
-  background-color: #F84646;
+  background-color: #f84646;
   color: white;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   margin-bottom: 70px;
 }
-.s3 .container .card button:hover{
+.s3 .container .card button:hover {
   transform: scale(1.1);
 }
-.s3 .container .card button:active{
+.s3 .container .card button:active {
   transform: scale(0.9);
 }
-.s3 .container .card img{
+.s3 .container .card img {
   width: 100%;
   height: 100%;
 }
-.s3 .container .card:nth-of-type(3){
+.s3 .container .card:nth-of-type(3) {
   margin-top: 70px;
 }
-.s4 .container{
+
+.sponsors {
+  background-color: #f4f5f7;
+  text-align: center;
+}
+
+.sponsors .container {
+  padding: 100px 0px;
+}
+
+.sponsors .sponsors_title h1 {
+  color: #18191f;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.sponsors .sponsors_title p {
+  color: #18191f;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sponsors .sponsors_boxs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.sponsors_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sponsors_card {
+  width: 220px;
+  height: 96px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.sponsors_card img {
+  width: 100%;
+  height: 100%;
+}
+
+.s4 .container {
   text-align: center;
   margin-top: 100px;
   line-height: 50px;
@@ -258,32 +328,32 @@ nav .container ul li button:active {
   z-index: 3;
   margin-bottom: 100px;
 }
-.s4 .container button{
+.s4 .container button {
   padding: 15px 35px;
   border: none;
-  background-color: #F84646;
+  background-color: #f84646;
   color: white;
   border-radius: 8px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.s4 .container button:hover{
+.s4 .container button:hover {
   transform: scale(1.1);
 }
-.s4 .container button:active{
+.s4 .container button:active {
   transform: scale(0.9);
 }
-.s4 .container .circle{
+.s4 .container .circle {
   width: 45px;
   height: 45px;
-  background-color: #F84646;
+  background-color: #f84646;
   border-radius: 50%;
   position: absolute;
   left: 595px;
   top: 20px;
   z-index: -2;
 }
-footer{
-  background-color: #F84646;
+footer {
+  background-color: #f84646;
   color: white;
   padding-top: 40px;
 }
@@ -292,20 +362,20 @@ footer .container .boxs {
   align-items: start;
   justify-content: space-between;
 }
-footer .container .card ul{
+footer .container .card ul {
   line-height: 50px;
   padding-bottom: 20px;
 }
-footer .container .card ul li:nth-of-type(1){
+footer .container .card ul li:nth-of-type(1) {
   font-weight: 800;
 }
-footer .container .card ul li{
+footer .container .card ul li {
   font-weight: 300;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
 }
-footer .container  ul li::after{
+footer .container ul li::after {
   content: "";
   position: absolute;
   width: 0;
@@ -314,18 +384,18 @@ footer .container  ul li::after{
   left: 50%;
   background-color: white;
   transform: translate(-50%);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-footer .container .card ul li:hover::after{
+footer .container .card ul li:hover::after {
   width: 100%;
 }
-footer .container .text{
+footer .container .text {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 50px;
 }
-footer .container .text ul{
+footer .container .text ul {
   display: flex;
   align-items: center;
   gap: 10px;
