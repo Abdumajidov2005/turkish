@@ -27,6 +27,10 @@ nav .container {
   justify-content: space-between;
 }
 
+.bars {
+  display: none;
+}
+
 nav .container .nav_content {
   display: flex;
   align-items: center;
@@ -136,6 +140,13 @@ nav .container button:active {
   font-weight: 900;
   padding-bottom: 30px;
 }
+
+.s1 .container .boxs {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
 .s1 .container .boxs .card {
   margin-top: 100px;
   width: 275px;
@@ -145,11 +156,7 @@ nav .container button:active {
   z-index: 2;
   transition: all 0.3s ease;
 }
-.s1 .container .boxs {
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-}
+
 .s1 .container .boxs .card .circle {
   width: 40px;
   height: 40px;
@@ -228,6 +235,17 @@ nav .container button:active {
   padding-bottom: 30px;
   color: white;
 }
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .s3 .container {
   margin-top: 150px;
   display: flex;
@@ -235,11 +253,19 @@ nav .container button:active {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.s3_boxs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
 .s3 .container .card {
   width: 530px;
   height: 430px;
-  padding-right: 50px;
-  padding-bottom: 100px;
 }
 .s3 .container .card h1 {
   font-size: 50px;
@@ -399,4 +425,71 @@ footer .container .text ul {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .bars {
+    display: block;
+  }
+  nav .container ul {
+    display: none;
+  }
+  nav .container button {
+    background-color: green;
+  }
+  .hero .container {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .hero .hero_info {
+    width: 100%;
+    text-align: center;
+  }
+  .hero .container h1 {
+    font-size: 42px;
+  }
+
+  .hero .container p {
+    font-size: 12px;
+  }
+
+  .hero .container form {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 60px;
+  }
+
+  .hero .container form input {
+    width: 50%;
+    font-size: 12px;
+  }
+  .s1 .container .boxs {
+    justify-content: center;
+  }
+  .s1 .container .boxs .card {
+    width: 45%;
+  }
+  .s2 .container {
+    flex-direction: column;
+  }
+  .s2 .container .links {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .arrow {
+    transform: rotate(90deg);
+  }
+  .s3_boxs:nth-of-type(1) {
+    flex-direction: column-reverse;
+  }
+  .s3 .container .card {
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+  }
 }
